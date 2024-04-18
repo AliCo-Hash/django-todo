@@ -1,0 +1,9 @@
+{% if todo_notes %}
+<ul>
+  {% for todo_note in todo_notes%}
+  <li>{{todo_note.note}}</li>
+  {% endfor%}
+</ul>
+{%else%}
+<p>No ToDo notes are available</p>
+{%endif%}
